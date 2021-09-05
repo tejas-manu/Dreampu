@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Application form </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+    
+h3 {text-align: center} h3 {font-family: impact} h3 {font-size: 45px}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: auto;
+  background-color: gainsboro;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Admission Form</h3>
+
+<div class="container">
+  <form action="admission_entry.php" method="POST"> 
+  <form action="admission_entry1.php" method="POST">
+      
+       <tr>
+      <td>
+    <label for="identity">Identity Proof</label></td>
+        <select id="identity" name="Identity_Proof">
+      <td><option value="Aadhaar Card">Aadhaar Card</option></td>
+    </select></tr>
+    
+      <tr>
+      <td><label for="identitynum"> Identity Number</label></td>
+          <td><input type="text" id="identity" name="Identity_Number" placeholder="Identity Number.."></td></tr>
+    
+      <tr>
+      <td><label for="fname">Full Name</label></td>
+          <td><input type="text" id="fname" name="Full_Name" placeholder="First name.."></td></tr>
+    <tr>
+      <td><label for="Gender">Gender</label></td>
+      <td><select id="gender" name="Gender">
+          <td><option value="Male">Male</option></td>
+          <td><option value="Female">Female</option></td>
+          <td><option value="Other">Other</option></td>
+          </select></td>
+      
+      <tr>
+      <td><label for="age">Age</label></td>
+          <td><input type="text" id="age" name="Age" placeholder="Age.."></td></tr>
+      
+     <tr>
+      <td><label for="ftname">Father Name</label></td>
+          <td><input type="text" id="ftname" name="Father_Name" placeholder="father name.."></td></tr>
+      
+      <tr>
+      <td><label for="mtname">Mother Name</label></td>
+          <td><input type="text" id="mtname" name="Mother_Name" placeholder="mother name.."></td></tr>
+      
+      <tr>
+      <td><label for="foccu">Father Occupation</label></td>
+          <td><input type="text" id="foccu" name="Father_Occupation" placeholder="father occ.."></td></tr>
+       
+      <tr>
+      <td><label for="moccu">Mother Occupation</label></td>
+          <td><input type="text" id="moccu" name="Mother_Occupation" placeholder="mother occ.."></td></tr>
+      
+       <tr>
+      <td><label for="Income">Income</label></td>
+          <td><input type="text" id="Income" name="Income" placeholder="income.."></td></tr>
+      
+       <tr>
+      <td>
+    <label for="Field">Field</label></td>
+        <select id="Field" name="Field">
+      <td><option value="science">Science</option></td>
+            <td><option value="Commerce">Commerce</option></td>
+    </select></tr>
+      
+      <tr>
+      <td>
+    <label for="Scourse">Science Course</label></td>
+        <select id="Science_Cource" name="Science_Course">
+      <td><option value="PCMB">PCMB</option></td>
+            <td><option value="PCMC">PCMC</option></td>
+            <td><option value="PCME">PCME</option></td>
+    </select></tr>
+      
+      <tr>
+      <td>
+    <label for="COcourse">Commerce Course</label></td>
+        <select id="Commerce_Course" name="Commerce_Course">
+      <td><option value="MSBA">MSBA</option></td>
+            <td><option value="MEBA">MBEA</option></td>
+            <td><option value="SEBA">SEBA</option></td>
+            <td><option value="CEBA">CEBA</option></td>
+    </select></tr>
+      
+      <tr>
+      <td><label for="Class10">Class 10 percentage</label></td>
+      <td><input type="text" id="Class_10_percentage" name="Class_10_percentage" placeholder="Class_10_percentage.."></td>
+      </tr>
+      
+      <tr>
+      <td><label for="number">Contact Number</label></td>
+      <td><input type="text" id="cnumber" name="Contact_Number" placeholder="Contact Number.."></td>
+      </tr>
+     
+      <tr>
+      <td><label for="number">Alternate Number</label></td>
+      <td><input type="text" id="anumber" name="Alternate_Number" placeholder="Alternate Number.."></td>
+      </tr>
+      
+      <tr>
+      <td><label for="address">House Address</label></td>
+      <td><textarea id="haddress" name="House_Address" placeholder="Current Address" style="height:100px"></textarea></td>
+      </tr>
+      
+      <tr>
+      <td><label for="Nationality">Nationality</label></td>
+    <td><select id="Nationality" name="Nationality">
+      <option value="India">India</option>
+        </select></td>
+      </tr>
+      
+      <tr>
+      <td><label for="Email">Email_Address</label></td>
+      <td><textarea id="Email" name="Email" placeholder="Email_Address"></textarea></td>
+      </tr>
+      
+     <tr>
+       <td colspan="2" align="center" ><input type="submit" name="save" value="Submit"></td>
+       </tr>
+      
+ 
+        </form>
+  </form>
+      </div>
+
+</body>
+</html>
+
+
